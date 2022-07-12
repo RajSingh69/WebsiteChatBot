@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot VersionOne</title> <!-- This is the title of the webpage. --> 
+
+    <!-- A.I. Code starts in the head, underneath the title. -->
+
+    <link rel="stylesheet" href="css/chat.css">  <!-- Direct link to chat.css. Directory link shown here. Passes through files etc. -->
+    <link rel="stylesheet" href="css/home.css">  <!-- Direct link to chat.css. Directory link shown here. -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   Style sheet for icons. -->
+    <script src="https://kit.fontawesome.com/261f2476ec.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+    <body>
+    <!-- "class" refers to the class name, very much like in Java. Each class can individually be referenced in the CSS folder. -->
+    <!-- "div" refers to a division / block of code. -->  
+
+        <!--CHAT BAR BLOCK (AKA the chat with us part) -->
+
+        <div class="chat-bar-collapsible"> 
+
+            <!-- This code snippet is for creating a button. -->
+            <!--"id" = name / reference, "type" = what it is, "class" = ???????? -->
+
+            <button id="chat-button" type="button" class="collapsible">You speak with Iuana. 
+                <i id="chat_icon" style="color: rgb(17, 215, 17);" class="fa fa-fw fa-comments-o"> </i>
+            </button>
+
+            <div class="content">
+
+                <!-- This code is for the entire block where you chat with the A.I. -->
+                <div class="full-chat-block">
+
+                    <!-- Message Container (Where you write the message) -->
+                    <div class="outer-container">
+
+                        <div class="chat-container">
+
+                            <!-- MESSAGES STUFF HERE-->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Ianua Is Awakening...</span></p>
+                            </div>
+                            
+                            <!-- INPUT BOX FOR THE USER -->
+                            <div class="chat_bar_input block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Present your peasant wish to Ianua. Cunt.">
+                                    <p></p>
+                                </div>
+
+                                <!-- ICONS FOR THE CHAT BAR HERE-->
+                                <!--Note: See what else you can use instead of heart. Try tick/ shapes etc (fa-solid fa-dragon) -->
+                                <div class="chat-bar-icons">
+                                    <i id="chat_icon" style="color: rgb(4, 24, 43);" class="fa fa-fw fa-heart"  
+                                    onclick="heartButton()" > </i> 
+                                    <i id="chat_icon" style="color: rgb(216, 43, 40);" class="fa fa-fw fa-send"  
+                                    onclick="sendButton()" > </i>
+                                </div>
+                            </div>
+                            
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                    </div>
+
+                </div>   
+
+            </div> 
+
+        </div>
+ 
+    </body>
+
+    
+
+<!-- These are direct links under the body to the.js files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Link to the "jquery" package. -->
+<script src="scripts/responses.js"> </script>
+<script src="scripts/chat.js"> </script>
+
+
+<!-- https://fontawesome.com/icons -->
+<!-- https://fontawesome.com/search?p=1&m=free FREE ONES HEREEEEE --> 
+
+</html>
+<!-- -->
